@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20250130 16:43:06.308" rpa="false" schemaversion="4">
-<suite id="s1" name="Testeyoutube" source="C:\Users\tsjes\OneDrive\Documentos\pipelineJenkins\suites\testeyoutube.robot">
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20250130 17:12:06.788" rpa="false" schemaversion="4">
+<suite id="s1" name="Google" source="C:\Users\tsjes\OneDrive\Documentos\pipelineJenkins\suites\google.robot">
 <test id="s1-t1" name="TesteRobot" line="7">
-<kw name="Abrir url" library="youtube">
+<kw name="Abrir url google" library="google">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${youtube.url}</arg>
+<arg>${google.url}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250130 16:43:06.639" level="INFO">Opening browser 'firefox' to base url 'https://www.youtube.com/watch?v=mSYEzm2gIAQ'.</msg>
-<status status="PASS" starttime="20250130 16:43:06.638" endtime="20250130 16:43:19.177"/>
+<msg timestamp="20250130 17:12:07.397" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com.br'.</msg>
+<status status="PASS" starttime="20250130 17:12:07.396" endtime="20250130 17:12:20.725"/>
 </kw>
-<status status="PASS" starttime="20250130 16:43:06.637" endtime="20250130 16:43:19.177"/>
+<status status="PASS" starttime="20250130 17:12:07.396" endtime="20250130 17:12:20.726"/>
 </kw>
-<kw name="Copiar o campo" library="youtube">
+<kw name="Copiar o campo google" library="google">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${youtube.campo}</arg>
+<arg>${google.campo}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20250130 16:43:19.178" endtime="20250130 16:43:20.968"/>
+<status status="PASS" starttime="20250130 17:12:20.727" endtime="20250130 17:12:20.802"/>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
+<kw name="Get Value" library="SeleniumLibrary">
 <var>${texto}</var>
-<arg>${youtube.campo}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20250130 16:43:21.051" level="INFO">${texto} = MK1 - Conan the Barbarian Vs. Reiko Gameplay</msg>
-<status status="PASS" starttime="20250130 16:43:20.968" endtime="20250130 16:43:21.051"/>
+<arg>${google.campo}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20250130 17:12:20.824" level="INFO">${texto} = Pesquisa Google</msg>
+<status status="PASS" starttime="20250130 17:12:20.803" endtime="20250130 17:12:20.824"/>
 </kw>
-<status status="PASS" starttime="20250130 16:43:19.178" endtime="20250130 16:43:21.051"/>
+<status status="PASS" starttime="20250130 17:12:20.727" endtime="20250130 17:12:20.824"/>
 </kw>
-<status status="PASS" starttime="20250130 16:43:06.637" endtime="20250130 16:43:21.052"/>
+<status status="PASS" starttime="20250130 17:12:07.394" endtime="20250130 17:12:20.825"/>
 </test>
-<status status="PASS" starttime="20250130 16:43:06.309" endtime="20250130 16:43:21.053"/>
+<status status="PASS" starttime="20250130 17:12:06.793" endtime="20250130 17:12:20.827"/>
 </suite>
 <statistics>
 <total>
@@ -38,7 +38,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Testeyoutube">Testeyoutube</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Google">Google</stat>
 </suite>
 </statistics>
 <errors>
